@@ -351,14 +351,6 @@ namespace Mediaportal.TV.Server.Plugins.CustomDevices.Turbosight
     private IntPtr _ciHandle = IntPtr.Zero;
 
 
-
-
-
-
-
-
-
-
     // And above we test the blank line removing
     private IBaseFilter _tunerFilter = null;
     private String _tunerFilterName = null;
@@ -368,8 +360,10 @@ namespace Mediaportal.TV.Server.Plugins.CustomDevices.Turbosight
     private int _tbsAccessProperty = 0;
 
     private bool _isTurbosight = false;
+
     /// <summary>This example will be separated because it is not single line anymore.</summary>
     private bool _isUsb = false;
+
     private bool _isCiSlotPresent = false;
     private bool _isCamPresent = false;
 
