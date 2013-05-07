@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+
+  <PropertyGroup>
+    <AppDestination>$(TargetDir)</AppDestination>
+
+    <MPAppDestination>$(SolutionDir)..\..\..\..\mediaportal\MediaPortal.Application\$(OutDir)</MPAppDestination>
+  </PropertyGroup>
+
+  <!-- Resources for application's base directory-->
+  <ItemGroup>
+    <AppBase Include="$(SolutionDir)\..\ExternalBinaries\*.*" />
+
+    <AppBase Include="$(SolutionDir)SetupControls\$(OutDir)Mediaportal.TV.Server.SetupControls.*" />
+    <!--<AppBase Include="$(SolutionDir)..\..\..\..\Common-MP-TVE3\PowerScheduler.Interfaces\$(OutDir)Mediaportal.TV.Server.Plugins.PowerScheduler.Interfaces" />-->
+    <AppBase Include="$(SolutionDir)..\..\..\..\DirectShowFilters\TsWriter\bin\Release\*.ax" />
+    <AppBase Include="$(SolutionDir)..\..\..\..\DirectShowFilters\streamingserver\bin\Release\*.dll" />
+    <AppBase Include="$(SolutionDir)..\..\..\..\DirectShowFilters\DXErr9\$(OutDir)dxerr9.*" />
+
+    <AppBase Include="$(SolutionDir)TvLibrary.IntegrationProvider.Interfaces\$(OutDir)*.dll" />
+    <AppBase Include="$(SolutionDir)TvLibrary.IntegrationProvider.Interfaces\$(OutDir)*.pdb" />
+    <AppBase Include="$(SolutionDir)TvLibrary.Integration.MP1\$(OutDir)*.dll" />
+    <AppBase Include="$(SolutionDir)TvLibrary.Integration.MP1\$(OutDir)*.pdb" />
+
+    <MpAppBase Include="$(SolutionDir)TvLibrary.Integration.MP1\$(OutDir)*.dll" />
+    <MpAppBase Include="$(SolutionDir)TvLibrary.Integration.MP1\$(OutDir)*.pdb" />
+  </ItemGroup>
+
+  <!-- Plugins and their resources -->
+  <ItemGroup>
+    <Plugins Include="$(SolutionDir)Plugins\XmlTvImport\$(OutDir)Mediaportal.TV.Server.Plugins.XmlTvImport.*" />
+    <AppBase Include="$(SolutionDir)Plugins\XmlTvImport\$(OutDir)Ionic.Zip.dll" />
+
+    <Plugins Include="$(SolutionDir)Plugins\ComSkipLauncher\$(OutDir)Mediaportal.TV.Server.Plugins.ComSkipLauncher.*" />
+
+    <Plugins Include="$(SolutionDir)Plugins\ConflictsManager\$(OutDir)Mediaportal.TV.Server.Plugins.ConflictsManager.*" />
+
+    <Plugins Include="$(SolutionDir)Plugins\PluginBase\$(OutDir)Mediaportal.TV.Server.Plugins.Base.*" />
+
+    <Plugins Include="$(SolutionDir)Plugins\PowerScheduler\$(OutDir)Mediaportal.TV.Server.Plugins.PowerScheduler.dll" />
+    <Plugins Include="$(SolutionDir)Plugins\PowerScheduler\$(OutDir)Mediaportal.TV.Server.Plugins.PowerScheduler.pdb" />
+    <Plugins Include="$(SolutionDir)Plugins\PowerScheduler\$(OutDir)Mediaportal.TV.Server.Plugins.PowerScheduler.Interfaces.dll" />
+    <Plugins Include="$(SolutionDir)Plugins\PowerScheduler\$(OutDir)Mediaportal.TV.Server.Plugins.PowerScheduler.Interfaces.pdb" />
+
+    <Plugins Include="$(SolutionDir)Plugins\ServerBlaster\ServerBlaster\$(OutDir)Mediaportal.TV.Server.Plugins.ServerBlaster.*" />
+    <Plugins Include="$(SolutionDir)Plugins\ServerBlaster\ServerBlaster.Learn\$(OutDir)Mediaportal.TV.Server.Plugins.ServerBlaster.Learn.*" />
+
+    <Plugins Include="$(SolutionDir)Plugins\WebEPG\WebEPG\$(OutDir)Mediaportal.TV.Server.Plugins.WebEPG.*" />
+    <!--<AppBase Include="$(SolutionDir)ServiceAgents\$(OutDir)Mediaportal.TV.Server.Plugins.WebEPG.*" />-->
+
+  </ItemGroup>
+
+  <!-- CustomDevices and their resources -->
+  <ItemGroup>
+    <CustomDevices Include="$(SolutionDir)Plugins\CustomDevices\Anysee\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.Anysee.*" />
+    <CustomDevicesResources Include="$(SolutionDir)TVServer.Base\CIAPI.dll" />
+
+    <CustomDevices Include="$(SolutionDir)Plugins\CustomDevices\Compro\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.Compro.*" />
+    <CustomDevices Include="$(SolutionDir)Plugins\CustomDevices\Conexant\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" />
+    <CustomDevices Include="$(SolutionDir)Plugins\CustomDevices\DigitalDevices\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" />
+    <CustomDevices Include="$(SolutionDir)Plugins\CustomDevices\DigitalEverywhere\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" />
+    <CustomDevices Include="$(SolutionDir)Plugins\CustomDevices\DvbSky\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" />
+    <CustomDevices Include="$(SolutionDir)Plugins\CustomDevices\Geniatech\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" />
+    <CustomDevices Include="$(SolutionDir)Plugins\CustomDevices\Genpix\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" />
+    <CustomDevices Include="$(SolutionDir)Plugins\CustomDevices\GenpixOpenSource\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" />
+    <CustomDevices Include="$(SolutionDir)Plugins\CustomDevices\Hauppauge\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" />
+
+    <CustomDevices Include="$(SolutionDir)Plugins\CustomDevices\Knc\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" />
+    <CustomDevicesResources Include="$(SolutionDir)TVServer.Base\KNCBDACTRL.dll" />
+
+    <CustomDevices Include="$(SolutionDir)Plugins\CustomDevices\MdPlugin\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" />
+    <CustomDevices Include="$(SolutionDir)Plugins\CustomDevices\Microsoft\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" />
+    <CustomDevices Include="$(SolutionDir)Plugins\CustomDevices\NetUp\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" />
+    <CustomDevices Include="$(SolutionDir)Plugins\CustomDevices\Omicom\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" />
+    <CustomDevices Include="$(SolutionDir)Plugins\CustomDevices\Prof\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" />
+    <CustomDevices Include="$(SolutionDir)Plugins\CustomDevices\ProfUsb\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" />
+    <CustomDevices Include="$(SolutionDir)Plugins\CustomDevices\SmarDtvUsbCi\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" />
+
+    <CustomDevices Include="$(SolutionDir)Plugins\CustomDevices\TechnoTrend\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" />
+    <CustomDevicesResources Include="$(SolutionDir)TVServer.Base\ttBdaDrvApi_Dll.dll" />
+
+    <CustomDevices Include="$(SolutionDir)Plugins\CustomDevices\TeVii\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" />
+    <CustomDevicesResources Include="$(SolutionDir)TVServer.Base\TeVii.dll" />
+
+    <CustomDevices Include="$(SolutionDir)Plugins\CustomDevices\Turbosight\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" />
+    <CustomDevicesResources Include="$(SolutionDir)TVServer.Base\TbsCIapi.dll" />
+
+    <CustomDevices Include="$(SolutionDir)Plugins\CustomDevices\Twinhan\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" />
+    <CustomDevices Include="$(SolutionDir)Plugins\CustomDevices\ViXS\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" />
+  </ItemGroup>
+
+  <Target Name="BeforeBuild">
+    <Copy SourceFiles="@(AppBase)" DestinationFolder="$(AppDestination)" />
+    <Copy SourceFiles="@(Plugins)" DestinationFolder="$(AppDestination)Plugins\" />
+    <Copy SourceFiles="@(CustomDevices)" DestinationFolder="$(AppDestination)Plugins\CustomDevices\" />
+    <Copy SourceFiles="@(CustomDevicesResources)" DestinationFolder="$(AppDestination)Plugins\CustomDevices\Resources\" />
+
+    <Copy SourceFiles="@(MpAppBase)" DestinationFolder="$(MPAppDestination)" />
+
+    <Exec Command='regsvr32.exe "$(TargetDir)tswriter.ax" /s' />
+  </Target>
+</Project>
