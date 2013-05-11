@@ -14,3 +14,7 @@ _ReSharper.*
 /Build/_BuildReport_Files
 /Build/*.html
 /Build/*.xml
+
+# NuGet related files & folder
+NuGet.exe
+Packages
