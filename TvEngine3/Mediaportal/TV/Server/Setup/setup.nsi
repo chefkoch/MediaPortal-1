@@ -465,9 +465,12 @@ ${MementoSection} "MediaPortal TV Server" SecServer
   File "${git_TVServer}\Server\Plugins\XmlTvImport\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.XmlTvImport.dll"
   File "${git_TVServer}\Server\Plugins\WebEPG\WebEPG\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.WebEPG.dll"
   File "${git_TVServer}\Server\Plugins\WebEPG\WebEPGPlugin\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.WebEPGImport.dll"
-  
-    ; CustomDevice Plugin Directory
+
+  ; CustomDevice Plugin Directory
+  ; 2013-05-12, chefkoch: Include it recursive to prevent calling all explicitly
   SetOutPath "$INSTDIR\Plugins\CustomDevices"
+  File /r "${git_TVServer}\Server\TvService\bin\${BUILD_TYPE}\Plugins\CustomDevices\*"
+
   File "${git_TVServer}\Server\Plugins\CustomDevices\Anysee\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Anysee.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\AVerMedia\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.AVerMedia.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\Compro\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Compro.dll"
@@ -662,7 +665,10 @@ ${MementoSectionEnd}
   Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Turbosight.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Twinhan.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.ViXS.dll"
-  RMDir "$INSTDIR\Plugins\CustomDevices"
+
+  ; CustomDevice Plugin Directory
+  ; 2013-05-12, chefkoch: Remove it recursive to prevent calling all explicitly
+  RMDir /r "$INSTDIR\Plugins\CustomDevices"
   RMDir "$INSTDIR\Plugins"
 
   ; And finally remove all the files installed
@@ -761,9 +767,12 @@ ${MementoSectionEnd}
   Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Turbosight.dll"
   Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Twinhan.dll"
   Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.ViXS.dll"
-  RMDir "${SETUP_TV_FOLDER}\Plugins\CustomDevices"
+
+  ; CustomDevice Plugin Directory
+  ; 2013-05-12, chefkoch: Remove it recursive to prevent calling all explicitly
+  RMDir /r "${SETUP_TV_FOLDER}\Plugins\CustomDevices"
   RMDir "${SETUP_TV_FOLDER}\Plugins"
-  
+
   ; And finally remove SetupTV files installed
   ; Leave the directory in place, as it might contain user modified files
   Delete "${SETUP_TV_FOLDER}\DirectShowLib.dll"
@@ -936,7 +945,10 @@ ${MementoSection} "MediaPortal TV Client plugin" SecClient
   File "${git_TVServer}\Server\Plugins\WebEPG\WebEPGPlugin\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.WebEPGImport.dll"
 
   ; CustomDevice Plugin Directory
+  ; 2013-05-12, chefkoch: Include it recursive to prevent calling all explicitly
   SetOutPath "${SETUP_TV_FOLDER}\Plugins\CustomDevices"
+  File /r "${git_TVServer}\Server\TvService\bin\${BUILD_TYPE}\Plugins\CustomDevices\*"
+
   File "${git_TVServer}\Server\Plugins\CustomDevices\Anysee\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Anysee.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\AVerMedia\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.AVerMedia.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\Compro\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Compro.dll"
