@@ -438,7 +438,6 @@ ${MementoSection} "MediaPortal TV Server" SecServer
   SetOutPath "$INSTDIR\Plugins\CustomDevices\Resources"
   File "${TVSERVER.BASE}\Ionic.Zip.dll"
   File "${TVSERVER.BASE}\hauppauge.dll"
-  File "${TVSERVER.BASE}\CIAPI.dll"
   File "${TVSERVER.BASE}\KNCBDACTRL.dll"
   File "${TVSERVER.BASE}\TbsCIapi.dll"
   File "${TVSERVER.BASE}\tevii.dll"
@@ -471,7 +470,6 @@ ${MementoSection} "MediaPortal TV Server" SecServer
   SetOutPath "$INSTDIR\Plugins\CustomDevices"
   File /r "${git_TVServer}\Server\TvService\bin\${BUILD_TYPE}\Plugins\CustomDevices\*"
 
-  File "${git_TVServer}\Server\Plugins\CustomDevices\Anysee\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Anysee.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\AVerMedia\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.AVerMedia.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\Compro\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Compro.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\Conexant\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Conexant.dll"
@@ -625,7 +623,6 @@ ${MementoSectionEnd}
   Delete "${COMMON_APPDATA}\xmltv\xmltv.dtd"
 
   ; Remove CustomDevice plugin 3rd party resource assemblies
-  Delete "$INSTDIR\Plugins\CustomDevices\Resources\CIAPI.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Resources\KNCBDACTRL.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Resources\TbsCIapi.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Resources\tevii.dll"
@@ -641,7 +638,6 @@ ${MementoSectionEnd}
   Delete "$INSTDIR\Plugins\WebEPG.dll"
   Delete "$INSTDIR\Plugins\WebEPGImport.dll"
   Delete "$INSTDIR\Plugins\XmlTvImport.dll"
-  Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Anysee.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.AVerMedia.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Compro.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Conexant.dll"
@@ -743,7 +739,6 @@ ${MementoSectionEnd}
   Delete "${SETUP_TV_FOLDER}\Plugins\Mediaportal.TV.Server.Plugins.XmlTvImport.dll"
 
   ; Remove Plugins
-  Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Anysee.dll"
   Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.AVerMedia.dll"
   Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Compro.dll"
   Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Conexant.dll"
@@ -949,7 +944,6 @@ ${MementoSection} "MediaPortal TV Client plugin" SecClient
   SetOutPath "${SETUP_TV_FOLDER}\Plugins\CustomDevices"
   File /r "${git_TVServer}\Server\TvService\bin\${BUILD_TYPE}\Plugins\CustomDevices\*"
 
-  File "${git_TVServer}\Server\Plugins\CustomDevices\Anysee\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Anysee.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\AVerMedia\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.AVerMedia.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\Compro\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Compro.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\Conexant\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Conexant.dll"
@@ -976,7 +970,6 @@ ${MementoSection} "MediaPortal TV Client plugin" SecClient
   
   ; CustomDevice plugin 3rd party resource assemblies
   SetOutPath "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Resources"
-  File "${TVSERVER.BASE}\CIAPI.dll"
   File "${TVSERVER.BASE}\KNCBDACTRL.dll"
   File "${TVSERVER.BASE}\TbsCIapi.dll"
   File "${TVSERVER.BASE}\tevii.dll"
