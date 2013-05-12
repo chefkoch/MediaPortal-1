@@ -206,24 +206,6 @@ rem xcopy "$(SolutionDir)..\..\..\..\Common-MP-TVE3\PowerScheduler.Interfaces\$(
 xcopy "$(SolutionDir)..\..\..\..\DirectShowFilters\TsWriter\bin\Release\*.ax" "$(TargetDir)" /C/Y/S
 xcopy "$(SolutionDir)..\..\..\..\DirectShowFilters\streamingserver\bin\Release\*.dll" "$(TargetDir)" /C/Y/S
 regsvr32 "$(TargetDir)tswriter.ax" /s
-xcopy "$(SolutionDir)Plugins\CustomDevices\Compro\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.Compro.*" "$(TargetDir)Plugins\CustomDevices\" /C/Y/S
-xcopy "$(SolutionDir)Plugins\CustomDevices\Conexant\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" "$(TargetDir)Plugins\CustomDevices\" /C/Y/S
-xcopy "$(SolutionDir)Plugins\CustomDevices\DigitalDevices\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" "$(TargetDir)Plugins\CustomDevices\" /C/Y/S
-xcopy "$(SolutionDir)Plugins\CustomDevices\DigitalEverywhere\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" "$(TargetDir)Plugins\CustomDevices\" /C/Y/S
-xcopy "$(SolutionDir)Plugins\CustomDevices\DvbSky\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" "$(TargetDir)Plugins\CustomDevices\" /C/Y/S
-xcopy "$(SolutionDir)Plugins\CustomDevices\Geniatech\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" "$(TargetDir)Plugins\CustomDevices\" /C/Y/S
-xcopy "$(SolutionDir)Plugins\CustomDevices\Genpix\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" "$(TargetDir)Plugins\CustomDevices\" /C/Y/S
-xcopy "$(SolutionDir)Plugins\CustomDevices\GenpixOpenSource\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" "$(TargetDir)Plugins\CustomDevices\" /C/Y/S
-xcopy "$(SolutionDir)Plugins\CustomDevices\Hauppauge\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" "$(TargetDir)Plugins\CustomDevices\" /C/Y/S
-xcopy "$(SolutionDir)Plugins\CustomDevices\MdPlugin\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" "$(TargetDir)Plugins\CustomDevices\" /C/Y/S
-xcopy "$(SolutionDir)Plugins\CustomDevices\Microsoft\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" "$(TargetDir)Plugins\CustomDevices\" /C/Y/S
-xcopy "$(SolutionDir)Plugins\CustomDevices\NetUp\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" "$(TargetDir)Plugins\CustomDevices\" /C/Y/S
-xcopy "$(SolutionDir)Plugins\CustomDevices\Omicom\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" "$(TargetDir)Plugins\CustomDevices\" /C/Y/S
-xcopy "$(SolutionDir)Plugins\CustomDevices\Prof\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" "$(TargetDir)Plugins\CustomDevices\" /C/Y/S
-xcopy "$(SolutionDir)Plugins\CustomDevices\ProfUsb\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" "$(TargetDir)Plugins\CustomDevices\" /C/Y/S
-xcopy "$(SolutionDir)Plugins\CustomDevices\SmarDtvUsbCi\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" "$(TargetDir)Plugins\CustomDevices\" /C/Y/S
-xcopy "$(SolutionDir)Plugins\CustomDevices\Twinhan\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" "$(TargetDir)Plugins\CustomDevices\" /C/Y/S
-xcopy "$(SolutionDir)Plugins\CustomDevices\ViXS\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" "$(TargetDir)Plugins\CustomDevices\" /C/Y/S
 xcopy "$(SolutionDir)TVServer.Base\*.dll" "$(TargetDir)Plugins\CustomDevices\Resources\" /C/Y/S
 xcopy "$(SolutionDir)..\..\..\..\DirectShowFilters\DXErr9\$(OutDir)dxerr9.*" "$(TargetDir)" /C/Y/S
 xcopy "$(SolutionDir)TvLibrary.IntegrationProvider.Interfaces\$(OutDir)*.dll" "$(TargetDir)" /C/Y/S
