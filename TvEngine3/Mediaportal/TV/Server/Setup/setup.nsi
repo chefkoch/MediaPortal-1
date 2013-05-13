@@ -438,7 +438,6 @@ ${MementoSection} "MediaPortal TV Server" SecServer
   SetOutPath "$INSTDIR\Plugins\CustomDevices\Resources"
   File "${TVSERVER.BASE}\Ionic.Zip.dll"
   File "${TVSERVER.BASE}\hauppauge.dll"
-  File "${TVSERVER.BASE}\KNCBDACTRL.dll"
   File "${TVSERVER.BASE}\tevii.dll"
   File "${TVSERVER.BASE}\ttBdaDrvApi_Dll.dll"
   
@@ -479,7 +478,6 @@ ${MementoSection} "MediaPortal TV Server" SecServer
   File "${git_TVServer}\Server\Plugins\CustomDevices\Genpix\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Genpix.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\GenpixOpenSource\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.GenpixOpenSource.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\Hauppauge\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Hauppauge.dll"
-  File "${git_TVServer}\Server\Plugins\CustomDevices\Knc\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Knc.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\MdPlugin\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.MdPlugin.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\Microsoft\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Microsoft.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\NetUp\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.NetUp.dll"
@@ -621,7 +619,6 @@ ${MementoSectionEnd}
   Delete "${COMMON_APPDATA}\xmltv\xmltv.dtd"
 
   ; Remove CustomDevice plugin 3rd party resource assemblies
-  Delete "$INSTDIR\Plugins\CustomDevices\Resources\KNCBDACTRL.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Resources\tevii.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Resources\ttBdaDrvApi_Dll.dll"
   RMDir "$INSTDIR\Plugins\CustomDevices\Resources"
@@ -645,7 +642,6 @@ ${MementoSectionEnd}
   Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Genpix.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.GenpixOpenSource.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Hauppauge.dll"
-  Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Knc.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.MdPlugin.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Microsoft.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.NetUp.dll"
@@ -745,7 +741,6 @@ ${MementoSectionEnd}
   Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Genpix.dll"
   Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.GenpixOpenSource.dll"
   Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Hauppauge.dll"
-  Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Knc.dll"
   Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.MdPlugin.dll"
   Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Microsoft.dll"
   Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.NetUp.dll"
@@ -949,7 +944,6 @@ ${MementoSection} "MediaPortal TV Client plugin" SecClient
   File "${git_TVServer}\Server\Plugins\CustomDevices\Genpix\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Genpix.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\GenpixOpenSource\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.GenpixOpenSource.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\Hauppauge\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Hauppauge.dll"
-  File "${git_TVServer}\Server\Plugins\CustomDevices\Knc\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Knc.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\MdPlugin\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.MdPlugin.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\Microsoft\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Microsoft.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\NetUp\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.NetUp.dll"
@@ -964,7 +958,6 @@ ${MementoSection} "MediaPortal TV Client plugin" SecClient
   
   ; CustomDevice plugin 3rd party resource assemblies
   SetOutPath "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Resources"
-  File "${TVSERVER.BASE}\KNCBDACTRL.dll"
   File "${TVSERVER.BASE}\tevii.dll"
   File "${TVSERVER.BASE}\ttBdaDrvApi_Dll.dll"
 
