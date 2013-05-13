@@ -439,7 +439,6 @@ ${MementoSection} "MediaPortal TV Server" SecServer
   File "${TVSERVER.BASE}\Ionic.Zip.dll"
   File "${TVSERVER.BASE}\hauppauge.dll"
   File "${TVSERVER.BASE}\KNCBDACTRL.dll"
-  File "${TVSERVER.BASE}\TbsCIapi.dll"
   File "${TVSERVER.BASE}\tevii.dll"
   File "${TVSERVER.BASE}\ttBdaDrvApi_Dll.dll"
   
@@ -490,7 +489,6 @@ ${MementoSection} "MediaPortal TV Server" SecServer
   File "${git_TVServer}\Server\Plugins\CustomDevices\SmarDtvUsbCi\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.SmarDtvUsbCi.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\TechnoTrend\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.TechnoTrend.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\TeVii\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.TeVii.dll"
-  File "${git_TVServer}\Server\Plugins\CustomDevices\Turbosight\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Turbosight.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\Twinhan\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Twinhan.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\ViXS\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.ViXS.dll"
   
@@ -624,7 +622,6 @@ ${MementoSectionEnd}
 
   ; Remove CustomDevice plugin 3rd party resource assemblies
   Delete "$INSTDIR\Plugins\CustomDevices\Resources\KNCBDACTRL.dll"
-  Delete "$INSTDIR\Plugins\CustomDevices\Resources\TbsCIapi.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Resources\tevii.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Resources\ttBdaDrvApi_Dll.dll"
   RMDir "$INSTDIR\Plugins\CustomDevices\Resources"
@@ -658,7 +655,6 @@ ${MementoSectionEnd}
   Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.SmarDtvUsbCi.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.TechnoTrend.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.TeVii.dll"
-  Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Turbosight.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Twinhan.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.ViXS.dll"
 
@@ -759,7 +755,6 @@ ${MementoSectionEnd}
   Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.SmarDtvUsbCi.dll"
   Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.TechnoTrend.dll"
   Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.TeVii.dll"
-  Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Turbosight.dll"
   Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Twinhan.dll"
   Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.ViXS.dll"
 
@@ -964,14 +959,12 @@ ${MementoSection} "MediaPortal TV Client plugin" SecClient
   File "${git_TVServer}\Server\Plugins\CustomDevices\SmarDtvUsbCi\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.SmarDtvUsbCi.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\TechnoTrend\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.TechnoTrend.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\TeVii\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.TeVii.dll"
-  File "${git_TVServer}\Server\Plugins\CustomDevices\Turbosight\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Turbosight.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\Twinhan\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Twinhan.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\ViXS\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.ViXS.dll"
   
   ; CustomDevice plugin 3rd party resource assemblies
   SetOutPath "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Resources"
   File "${TVSERVER.BASE}\KNCBDACTRL.dll"
-  File "${TVSERVER.BASE}\TbsCIapi.dll"
   File "${TVSERVER.BASE}\tevii.dll"
   File "${TVSERVER.BASE}\ttBdaDrvApi_Dll.dll"
 

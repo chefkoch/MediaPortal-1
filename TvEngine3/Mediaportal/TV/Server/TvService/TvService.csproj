@@ -225,7 +225,6 @@ xcopy "$(SolutionDir)Plugins\CustomDevices\ProfUsb\$(OutDir)Mediaportal.TV.Serve
 xcopy "$(SolutionDir)Plugins\CustomDevices\SmarDtvUsbCi\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" "$(TargetDir)Plugins\CustomDevices\" /C/Y/S
 xcopy "$(SolutionDir)Plugins\CustomDevices\TechnoTrend\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" "$(TargetDir)Plugins\CustomDevices\" /C/Y/S
 xcopy "$(SolutionDir)Plugins\CustomDevices\TeVii\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" "$(TargetDir)Plugins\CustomDevices\" /C/Y/S
-xcopy "$(SolutionDir)Plugins\CustomDevices\Turbosight\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" "$(TargetDir)Plugins\CustomDevices\" /C/Y/S
 xcopy "$(SolutionDir)Plugins\CustomDevices\Twinhan\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" "$(TargetDir)Plugins\CustomDevices\" /C/Y/S
 xcopy "$(SolutionDir)Plugins\CustomDevices\ViXS\$(OutDir)Mediaportal.TV.Server.Plugins.CustomDevices.*" "$(TargetDir)Plugins\CustomDevices\" /C/Y/S
 xcopy "$(SolutionDir)TVServer.Base\*.dll" "$(TargetDir)Plugins\CustomDevices\Resources\" /C/Y/S
