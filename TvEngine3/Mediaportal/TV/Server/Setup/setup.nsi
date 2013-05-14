@@ -439,7 +439,6 @@ ${MementoSection} "MediaPortal TV Server" SecServer
   File "${TVSERVER.BASE}\Ionic.Zip.dll"
   File "${TVSERVER.BASE}\hauppauge.dll"
   File "${TVSERVER.BASE}\tevii.dll"
-  File "${TVSERVER.BASE}\ttBdaDrvApi_Dll.dll"
   
   File "${git_DirectShowFilters}\StreamingServer\bin\${BUILD_TYPE}\StreamingServer.dll"
 
@@ -485,7 +484,6 @@ ${MementoSection} "MediaPortal TV Server" SecServer
   File "${git_TVServer}\Server\Plugins\CustomDevices\Prof\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Prof.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\ProfUsb\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.ProfUsb.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\SmarDtvUsbCi\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.SmarDtvUsbCi.dll"
-  File "${git_TVServer}\Server\Plugins\CustomDevices\TechnoTrend\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.TechnoTrend.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\TeVii\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.TeVii.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\Twinhan\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Twinhan.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\ViXS\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.ViXS.dll"
@@ -620,7 +618,6 @@ ${MementoSectionEnd}
 
   ; Remove CustomDevice plugin 3rd party resource assemblies
   Delete "$INSTDIR\Plugins\CustomDevices\Resources\tevii.dll"
-  Delete "$INSTDIR\Plugins\CustomDevices\Resources\ttBdaDrvApi_Dll.dll"
   RMDir "$INSTDIR\Plugins\CustomDevices\Resources"
 
   ; Remove Plugins
@@ -649,7 +646,6 @@ ${MementoSectionEnd}
   Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Prof.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.ProfUsb.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.SmarDtvUsbCi.dll"
-  Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.TechnoTrend.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.TeVii.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Twinhan.dll"
   Delete "$INSTDIR\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.ViXS.dll"
@@ -748,7 +744,6 @@ ${MementoSectionEnd}
   Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Prof.dll"
   Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.ProfUsb.dll"
   Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.SmarDtvUsbCi.dll"
-  Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.TechnoTrend.dll"
   Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.TeVii.dll"
   Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.Twinhan.dll"
   Delete "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Mediaportal.TV.Server.Plugins.CustomDevices.ViXS.dll"
@@ -951,7 +946,6 @@ ${MementoSection} "MediaPortal TV Client plugin" SecClient
   File "${git_TVServer}\Server\Plugins\CustomDevices\Prof\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Prof.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\ProfUsb\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.ProfUsb.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\SmarDtvUsbCi\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.SmarDtvUsbCi.dll"
-  File "${git_TVServer}\Server\Plugins\CustomDevices\TechnoTrend\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.TechnoTrend.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\TeVii\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.TeVii.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\Twinhan\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.Twinhan.dll"
   File "${git_TVServer}\Server\Plugins\CustomDevices\ViXS\bin\${BUILD_TYPE}\Mediaportal.TV.Server.Plugins.CustomDevices.ViXS.dll"
@@ -959,7 +953,6 @@ ${MementoSection} "MediaPortal TV Client plugin" SecClient
   ; CustomDevice plugin 3rd party resource assemblies
   SetOutPath "${SETUP_TV_FOLDER}\Plugins\CustomDevices\Resources"
   File "${TVSERVER.BASE}\tevii.dll"
-  File "${TVSERVER.BASE}\ttBdaDrvApi_Dll.dll"
 
   ; Integration plugin
   SetOutPath "${SETUP_TV_FOLDER}\Integration"
