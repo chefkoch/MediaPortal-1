@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+
+  <PropertyGroup>
+    <!-- todo, chefkoch: Should each plugin be within it's own folder? -->
+    <PluginDestination>$(SolutionDir)TvService\bin\$(Configuration)\Plugins\CustomDevices\</PluginDestination>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PluginFiles Include="$(TargetDir)$(TargetName)*.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <References Include="$(TargetDir)TeVii.dll" />
+  </ItemGroup>
+
+  <Target Name="AfterBuild">
+    <Copy SourceFiles="@(PluginFiles)" DestinationFolder="$(PluginDestination)" />
+    <Copy SourceFiles="@(References)" DestinationFolder="$(PluginDestination)Resources\" />
+  </Target>
+
+</Project>
