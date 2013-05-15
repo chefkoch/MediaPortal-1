@@ -431,16 +431,8 @@ ${MementoSection} "MediaPortal TV Server" SecServer
 
   ; 3rd party assemblies
   File "${TVSERVER.BASE}\Ionic.Zip.dll"
-  File "${git_DirectShowFilters}\StreamingServer\bin\${BUILD_TYPE}\StreamingServer.dll"
-  File "${git_DirectShowFilters}\DXErr9\bin\${BUILD_TYPE}\dxerr9.dll"
-  
-  ; CustomDevice plugin 3rd party resource assemblies
-  SetOutPath "$INSTDIR\Plugins\CustomDevices\Resources"
-  File "${TVSERVER.BASE}\Ionic.Zip.dll"
   File "${TVSERVER.BASE}\hauppauge.dll"
-  
   File "${git_DirectShowFilters}\StreamingServer\bin\${BUILD_TYPE}\StreamingServer.dll"
-
   File "${git_DirectShowFilters}\DXErr9\bin\${BUILD_TYPE}\dxerr9.dll"
 
   ; Common App Data Files
