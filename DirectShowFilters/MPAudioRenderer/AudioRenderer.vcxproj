@@ -44,10 +44,24 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\bin\Debug\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\obj\Debug\</IntDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\bin\Release\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\obj\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>obj\Debug\</IntDir>
+    <OutDir>bin\Debug\</OutDir>
+    <TargetName>AudioRenderer</TargetName>
+    <TargetExt>.ax</TargetExt>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>obj\Release\</IntDir>
+    <OutDir>bin\Release\</OutDir>
+    <TargetName>AudioRenderer</TargetName>
+    <TargetExt>.ax</TargetExt>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -55,9 +69,9 @@
       <AdditionalIncludeDirectories>$(WINDOWS_SDK)Include;$(DXSDK_DIR)Include;..\baseclasses;SoundTouch\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_USRDLL;FLOAT_SAMPLES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <AssemblerListingLocation>.\bin\Debug/</AssemblerListingLocation>
-      <ObjectFileName>.\bin\Debug/</ObjectFileName>
-      <ProgramDataBaseFileName>.\bin\Debug/</ProgramDataBaseFileName>
+      <AssemblerListingLocation>$(OutDir)</AssemblerListingLocation>
+      <ObjectFileName>$(OutDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)</ProgramDataBaseFileName>
       <CompileAs>CompileAsCpp</CompileAs>
       <ShowIncludes>false</ShowIncludes>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
@@ -66,11 +80,11 @@
       <RegisterOutput>false</RegisterOutput>
       <AdditionalDependencies>strmbasd.lib;Winmm.lib;dsound.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ShowProgress>LinkVerboseLib</ShowProgress>
-      <OutputFile>bin\Debug/mpaudiorenderer.ax</OutputFile>
+      <OutputFile>$(OutDir)mpaudiorenderer.ax</OutputFile>
       <AdditionalLibraryDirectories>..\shared;$(WINDOWS_SDK)lib;$(DXSDK_DIR)lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <IgnoreSpecificDefaultLibraries>libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ModuleDefinitionFile>.\source\MpAudioRenderer.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>source\MpAudioRenderer.def</ModuleDefinitionFile>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>
@@ -90,9 +104,9 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
-      <AssemblerListingLocation>.\bin\Release/</AssemblerListingLocation>
-      <ObjectFileName>.\bin\Release/</ObjectFileName>
-      <ProgramDataBaseFileName>.\bin\Release/</ProgramDataBaseFileName>
+      <AssemblerListingLocation>$(OutDir)</AssemblerListingLocation>
+      <ObjectFileName>$(OutDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)</ProgramDataBaseFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
@@ -104,10 +118,10 @@
       <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>strmbase.lib;Winmm.lib;dsound.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ShowProgress>LinkVerboseLib</ShowProgress>
-      <OutputFile>bin\Release/mpaudiorenderer.ax</OutputFile>
+      <OutputFile>$(OutDir)mpaudiorenderer.ax</OutputFile>
       <AdditionalLibraryDirectories>..\shared;$(WINDOWS_SDK)lib;$(DXSDK_DIR)lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ModuleDefinitionFile>.\source\MpAudioRenderer.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>source\MpAudioRenderer.def</ModuleDefinitionFile>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <LargeAddressAware>true</LargeAddressAware>
