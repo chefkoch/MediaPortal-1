@@ -78,7 +78,7 @@
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <IntrinsicFunctions>false</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <AdditionalIncludeDirectories>..\..\libbluray\includes;..\..\libbluray\src\libbluray\decoders;..\..\libbluray\src\libbluray;..\baseclasses;$(WINDOWS_SDK)Include\;$(DXSDK_DIR)Include;..\shared;.\libbluray;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(WINDOWS_SDK)Include;$(DXSDK_DIR)Include;..\shared;..\baseclasses;libbluray;..\..\libbluray\includes;..\..\libbluray\src\libbluray;..\..\libbluray\src\libbluray\decoders;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32; _WIN32; NDEBUG; _CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>false</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -135,7 +135,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..\libbluray\includes;..\..\libbluray\src\libbluray\decoders;..\..\libbluray\src\libbluray;..\baseclasses;$(WINDOWS_SDK)Include\;$(DXSDK_DIR)Include;..\shared;.\libbluray;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(WINDOWS_SDK)Include;$(DXSDK_DIR)Include;..\shared;..\baseclasses;libbluray;..\..\libbluray\includes;..\..\libbluray\src\libbluray;..\..\libbluray\src\libbluray\decoders;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>DBG=1;DEBUG;_DEBUG;INC_OLE2;STRICT;_MT;_DLL;_X86_=1;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
