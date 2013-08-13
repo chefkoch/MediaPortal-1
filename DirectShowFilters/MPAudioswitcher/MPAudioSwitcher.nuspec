@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>MediaPortal.AudioSwitcher</id>
+    <version>0.1.0.0</version>
+    <authors>Team MediaPortal</authors>
+    <owners>Team MediaPortal</owners>
+    <projectUrl>http://www.team-mediaportal.com/</projectUrl>
+    <iconUrl>http://www.team-mediaportal.com/images/stories/homepageV3/promotional_materials/MP2_Icon_General_1.png</iconUrl>
+    <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <copyright>Copyright © Team MediaPortal 2007 - 2013</copyright>
+    <summary>Summary is missing.</summary>
+    <description>Description is missing.</description>
+  </metadata>
+  <files>
+    <file src="bin\Release\MPAudioSwitcher.ax" target="Content\Resources" />
+  </files>
+</package>
