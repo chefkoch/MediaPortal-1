@@ -247,6 +247,10 @@
     <ClInclude Include="..\shared\TsHeader.h" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\baseclasses\baseclasses.vcxproj">
+      <Project>{E8A3F6FA-AE1C-4C8E-A0B6-9C8480324EAA}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
     <ProjectReference Include="..\DvbCoreUtils\DvbCoreUtils.vcxproj">
       <Project>{4b134b4c-4ef6-4647-9cea-a59ff0013357}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
