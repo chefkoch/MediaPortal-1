@@ -211,6 +211,12 @@
     <ClInclude Include="Source\Hdmv\Rasterizer.h" />
     <ClInclude Include="Source\Hdmv\SeparableFilter.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\baseclasses\baseclasses.vcxproj">
+      <Project>{E8A3F6FA-AE1C-4C8E-A0B6-9C8480324EAA}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
