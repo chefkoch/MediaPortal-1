@@ -153,6 +153,12 @@
     <None Include="source\dshowhelper.def" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\baseclasses\baseclasses.vcxproj">
+      <Project>{E8A3F6FA-AE1C-4C8E-A0B6-9C8480324EAA}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <ResourceCompile Include="source\dshowhelper.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
